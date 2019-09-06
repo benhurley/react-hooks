@@ -1,8 +1,13 @@
-# React Quick Start
+# React Hooks Practice
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Get Started 
-### Create your own React app (TLDR)
+## Getting Started
+You can either clone my example:
+```
+git clone https://github.com/benhurley/react-hooks.git
+```
+or start fresh:
+
 1. First install create-react-app command globally:
 ```
 npm install -g create-react-app
