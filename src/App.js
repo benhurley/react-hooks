@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useInput } from './hooks/input-hook'
 import './App.css';
 
 function App() {
+  const {value, bind, reset} = useInput("");
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    alert(`Welcome ${value}`);
+    reset()
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <h1> What's your name? </h1>
+            <input 
+              type="text" {... bind}
+              style={{ height: 40, width: 200, fontSize: 20, fontWeight: "bold", color: "white", backgroundColor: "#5C5C5C"}}
+          />
+          </label>
+        </form>
       </header>
     </div>
   );
 }
 
-export default App;
+export default App
+
+// style={{ height: 40, width: 200, fontSize: 20, fontWeight: "bold", color: "white", backgroundColor: "#5C5C5C"}} 
+//               onKeyPress={(e) => {
+//                 if (e.key === 'Enter') {
+//                   setName(e.target.value)
+//                 }
+//               }}
+//                 />
+//             <h1>{name}</h1>
