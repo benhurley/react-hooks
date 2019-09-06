@@ -1,4 +1,21 @@
+# React Quick Start
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Get Started 
+### Create your own React app (TLDR)
+1. First install create-react-app command globally:
+```
+npm install -g create-react-app
+```
+2. Navigate to desired location and create the app
+```
+create-react-app my-app && cd my-app
+```
+3. Start the app
+```
+npm start
+```
+(May ask for permission for terminal to access your browser, click "yes" and the app will launch on localhost:3000)
 
 ## Available Scripts
 
