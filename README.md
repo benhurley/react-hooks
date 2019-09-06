@@ -1,6 +1,8 @@
 # React Hooks Practice
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Screenshot](./src/screenshot.png)
+
 ## Getting Started
 You can either clone my example:
 ```
